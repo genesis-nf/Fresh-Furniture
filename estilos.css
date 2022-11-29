@@ -1,0 +1,175 @@
+*{
+    font-family:sans-serif;
+}
+
+
+
+
+.logo img{
+    width: 150px;
+}
+
+
+.escritorio{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://img2.kenayhome.com/64310/lavin-escritorio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 4%;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(139, 139, 139);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(0, 0, 0);
+    transition: .3s;
+}
+
+.principal{
+    padding: 20px;
+    text-align: center;
+    margin-top: 8%;
+    font-size: 35px;
+}
+
+
+.about{
+    display: grid;
+    grid-template-columns:  41% 14% 41%;
+    margin-top: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.texto{
+    margin-top:30px;
+    margin-left: 70px;
+}
+
+.texto1{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+
+.texto3{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+
+.galeria p{
+    margin-top: 160px;
+    margin-bottom: 160px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.categoria{
+    margin-top:100px;
+    padding: 12px;
+    padding-left: 90px;
+    background: rgb(232, 232, 232);
+}
+
+.footer{
+    padding: 12px;
+    background: rgb(232, 232, 232);
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.footer img{
+    margin-left: 40%;
+    text-align: center;
+}
+
+/* responsive */
+
+@media(max-width:700px){
+    *{
+        text-align: justify;
+    }
+    
+    .about{
+        display:block
+    }
+    .escritorio{
+        display: block;
+    }
+
+    .texto{
+        text-align: center;
+    }
+
+    .galeria{
+        display:column;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .galeria img{
+        width: 100%;
+    }
+
+    .galeria p{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .categoria{
+        font-size: 10px;
+    }
+
+}
+
+@media(max-width:874px){
+    .about{
+        display: block;
+    }
+    *{
+        text-align: center;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+    .principal{
+        padding: 10px;
+        text-align: justify;
+        margin-top: 8%;
+        font-size: 25px;
+    }
+}
